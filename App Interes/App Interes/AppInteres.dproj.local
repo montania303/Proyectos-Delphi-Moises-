@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/11/14 14:19:08.000.219,=C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/11/20 13:25:33.000.222,=C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/12 15:27:55.000.463,=C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/12 15:29:10.000.753,C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Desenvolvimento - XE\Documents\App Interes Moises\App Interes\UPrincipal.pas</Transaction>
+    <Transaction>2020/09/12 15:29:10.000.753,C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Desenvolvimento - XE\Documents\App Interes Moises\App Interes\UPrincipal.dfm</Transaction>
+    <Transaction>2020/09/12 15:29:42.000.244,=C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/09/12 15:32:55.000.944,C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\Desenvolvimento - XE\Documents\App Interes Moises\App Interes\USimulador.dfm</Transaction>
+    <Transaction>2020/09/12 15:32:55.000.944,C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\Desenvolvimento - XE\Documents\App Interes Moises\App Interes\USimulador.pas</Transaction>
+    <Transaction>2020/09/12 15:36:05.000.073,C:\Users\Desenvolvimento - XE\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Desenvolvimento - XE\Documents\App Interes Moises\App Interes\AppInteres.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

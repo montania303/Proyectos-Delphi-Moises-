@@ -1,0 +1,96 @@
+unit UFrmRegistroCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Data.DB,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls;
+
+type
+ Toperacion = (opNuevo, opActualizar, opNAvegar);
+
+type
+  TFrmRegistroCliente = class(TForm)
+    pnlPie: TPanel;
+    btnCerrar: TButton;
+    pgcPrincipal: TPageControl;
+    TbBuscar: TTabSheet;
+    TbDatos: TTabSheet;
+    pnlFiltro: TPanel;
+    TxtBuscar: TLabeledEdit;
+    btnBuscar: TButton;
+    pnlBtnBuscar: TPanel;
+    btnNuevo: TButton;
+    btnDetallar: TButton;
+    btnEliminar: TButton;
+    DBGrid1: TDBGrid;
+    DsBuscar: TDataSource;
+    txtId: TLabeledEdit;
+    txtNombre: TLabeledEdit;
+    cbxTipo: TComboBox;
+    lblTipo: TLabel;
+    txtDocumento: TLabeledEdit;
+    txtTelefono: TLabeledEdit;
+    pnlbtnReg: TPanel;
+    btnCancelar: TButton;
+    btnGrabar: TButton;
+    btnActualizar: TButton;
+    btnListar: TButton;
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure btnCerrarClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    FOperacion : Toperacion;
+    procedure Nuevo;
+    procedure Detallar;
+    procedure Configuracion;
+  public
+
+  end;
+
+var
+  FrmRegistroCliente: TFrmRegistroCliente;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmRegistroCliente.btnCerrarClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TFrmRegistroCliente.Configuracion;
+begin
+   TbBuscar.TabVisible := False;
+   TbDatos.TabVisible := False;
+end;
+
+procedure TFrmRegistroCliente.Detallar;
+begin
+  FOperacion := opNavegar;
+  pgcPrincipal.ActivePage := TbDatos;
+end;
+
+procedure TFrmRegistroCliente.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = #13 then
+   begin
+     Key := #0;
+     Perform(WM_NEXTDLGCTL,0,0);
+   end;
+end;
+
+procedure TFrmRegistroCliente.FormShow(Sender: TObject);
+begin
+ Configuracion;
+end;
+
+procedure TFrmRegistroCliente.Nuevo;
+begin
+  FOperacion := opNuevo;
+  pgcPrincipal.ActivePage := TbDatos;
+end;
+
+end.
